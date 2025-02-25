@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Шевчук Вікторія">
+    <title>Головна - Автомобілі</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles_index.css">
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(209, 188, 170);
+            font-family: 'Arial Narrow Bold', 'Lucida Sans Unicode', Verdana, sans-serif;
+        }   
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="main-menu">
+            <li>
+                <a href="index.html">&#8962; Головна</a>
+            </li>
+            <li>
+                <a href="sedan.html">Седани</a>
+            </li>
+            <li>
+                <a href="hatchback.html">Хетчбеки</a>
+            </li>
+            <li>
+                <a href="crossover.html">Кросовери</a>
+            </li>
+        </ul>
+    </div>
+    <div class="upper-center">
+        <h1>Вітаємо у світі автомобілів!</h1>
+    </div>
+
+    <div class="content">
+        <h2>Зміст</h2>
+        <ol class="inner-menu">
+            <li><a href="#вступ">Вступ</a></li>
+            <li><a href="#типи-авто">Типи автомобілів</a></li>
+            <li><a href="#вигляд-опис">Зовнішній вигляд та коротний опис</a></li>
+            <li><a href="#порівняння-моделей">Порівняння найпопулярніших моделей</a></li>
+            <li><a href="#автосалони">Автосалони в Україні</a></li>
+        </ol>
+        <h2 id="вступ">Вступ</h2>
+        <p>Автомобілі — це не просто засіб пересування, а стиль життя, технології та інновації. На нашому сайті ви знайдете корисну інформацію про різні типи автомобілів, їх переваги та особливості. Ми розглядаємо три основні категорії: <b>Седани</b>, <b>Хетчбеки</b> та <b>Кросовери</b>. Кожен тип автомобіля має свої переваги, і ми допоможемо вам зробити правильний вибір.</p>
+
+        <h2 id="типи-авто">Типи автомобілів</h2>
+        <p>Ось основні типи автомобілів, які ми розглядаємо:</p>
+        <dl>
+            <dt><b>Седан</b></dt>
+            <dd>Легковий автомобіль з чітко окремим багажником і салоном.</dd>
+            <dt><b>Хетчбек</b></dt>
+            <dd>Автомобіль з компактним кузовом і задніми дверима, що відкриваються разом із заднім склом.</dd>
+            <dt><b>Кросовер</b></dt>
+            <dd>Автомобіль, що поєднує в собі риси позашляховика та легкового авто.</dd>
+        </dl>
+
+        <h2 id="вигляд-опис">Зовнішній вигляд та короткий опис</h2>
+        <table class="car-table">
+            <thead>
+                <tr>
+                    <th>Седани</th>
+                    <th>Хетчбеки</th>
+                    <th>Кросовери</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./pictures/sedan.png" alt="Седан" class="car-image"></td>
+                    <td><img src="./pictures/hatchback.png" alt="Хетчбек" class="car-image"></td>
+                    <td><img src="./pictures/crossover.png" alt="Кросовер" class="car-image"></td>
+                </tr>
+                <tr>
+                    <td><a href="https://auto.ria.com/uk/search/?categories.main.id=1&indexName=auto,order_auto,newauto_search&body.id[0]=3" class="car-link">Обрати седан для покупки</a></td>
+                    <td><a href="https://auto.ria.com/uk/search/?indexName=auto,order_auto,newauto_search&body.id[4]=4&categories.main.id=1&country.import.usa.not=-1&price.currency=1&abroad.not=0&custom.not=1&page=0&size=10" class="car-link">Обрати хетчбек для покупки</a></td>
+                    <td><a href="https://auto.ria.com/uk/search/?indexName=auto,order_auto,newauto_search&body.id[1]=5&categories.main.id=1&country.import.usa.not=-1&price.currency=1&abroad.not=0&custom.not=1&page=0&size=10" class="car-link">Обрати кросовер для покупки</a></td>
+                </tr>
+                <tr>
+                    <td>Седани - це класичні легкові автомобілі з окремим багажним відділенням.</td>
+                    <td>Хетчбеки - компактні автомобілі зі зручним доступом до багажного відділення.</td>
+                    <td>Кросовери - це автомобілі, що поєднують в собі риси позашляховиків і легкових авто.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="порівняння-моделей">Порівняння найпопулярніших моделей</h2>
+        
+        <table class="car-comparison-table">
+            <!-- Групування стовпців -->
+            <colgroup>
+                <col class="category-col">
+                <col class="model-col">
+                <col class="spec-col">
+                <col class="spec-col">
+                <col class="spec-col">
+                <col class="features-col">
+                <col class="image-col">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2" class="category-header">Категорія</th>
+                    <th rowspan="2" class="model-header">Модель</th>
+                    <th colspan="3" class="spec-header">Технічні характеристики</th>
+                    <th rowspan="2" class="features-header">Особливості</th>
+                    <th rowspan="2" class="image-header">Зображення</th>
+                </tr>
+                <tr>
+                    <th class="spec-subheader">Об'єм двигуна (л)</th>
+                    <th class="spec-subheader">Потужність (к.с.)</th>
+                    <th class="spec-subheader">Тип палива</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" class="category-cell">Седани</td>
+                    <td>Hyundai Sonata</td>
+                    <td>2.0 - 2.5</td>
+                    <td>150 - 180</td>
+                    <td>Бензин / Гібрид</td>
+                    <td>Стильний дизайн, великий салон, технологічність</td>
+                    <td>
+                        <a href="./pictures/HyundaiSonata.png" target="_blank">
+                            <img src="./pictures/HyundaiSonata.png" alt="Hyundai Sonata" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Skoda Superb</td>
+                    <td>1.5 - 2.0</td>
+                    <td>150 - 280</td>
+                    <td>Бензин / Дизель</td>
+                    <td>Просторість, висока якість збірки, доступність повного приводу</td>
+                    <td>
+                        <a href="./pictures/SkodaSuperb.png" target="_blank">
+                            <img src="./pictures/SkodaSuperb.png" alt="Skoda Superb" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mazda 3</td>
+                    <td>2.0 - 2.5</td>
+                    <td>120 - 186</td>
+                    <td>Бензин</td>
+                    <td>Елегантний дизайн, економічність, хороша керованість</td>
+                    <td>
+                        <a href="./pictures/Mazda3.png" target="_blank">
+                            <img src="./pictures/Mazda3.png" alt="Mazda 3" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Honda Accord</td>
+                    <td>1.5 - 2.0</td>
+                    <td>192 - 252</td>
+                    <td>Бензин / Гібрид</td>
+                    <td>Надійність, комфорт, передові системи безпеки</td>
+                    <td>
+                        <a href="./pictures/HondaAccord.png" target="_blank">
+                            <img src="./pictures/HondaAccord.png" alt="Honda Accord" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Toyota Corolla</td>
+                    <td>1.6 - 2.0</td>
+                    <td>120 - 180</td>
+                    <td>Бензин / Гібрид</td>
+                    <td>Економічність, довговічність, доступність гібридної версії</td>
+                    <td>
+                        <a href="./pictures/ToyotaCorolla.png" target="_blank">
+                            <img src="./pictures/ToyotaCorolla.png" alt="Toyota Corolla" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td rowspan="5" class="category-cell">Хетчбеки</td>
+                    <td>SEAT LEON</td>
+                    <td>1.0 - 2.0</td>
+                    <td>90 - 300</td>
+                    <td>Бензин / Дизель</td>
+                    <td>Спортивний дизайн, доступність потужних версій, хороша керованість</td>
+                    <td>
+                        <a href="./pictures/SeatLeon.png" target="_blank">
+                            <img src="./pictures/SeatLeon.png" alt="SEAT LEON" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Volkswagen Golf GTI</td>
+                    <td>2.0</td>
+                    <td>245 - 300</td>
+                    <td>Бензин</td>
+                    <td>Легендарний хетчбек, спортивний характер, висока продуктивність</td>
+                    <td>
+                        <a href="./pictures/VolkswagenGolfGTI.png" target="_blank">
+                            <img src="./pictures/VolkswagenGolfGTI.png" alt="Volkswagen Golf GTI" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ford Focus ST</td>
+                    <td>2.0 - 2.3</td>
+                    <td>280 - 350</td>
+                    <td>Бензин</td>
+                    <td>Потужний двигун, спортивна підвіска, агресивний дизайн</td>
+                    <td>
+                        <a href="./pictures/FordFocusST.png" target="_blank">
+                            <img src="./pictures/FordFocusST.png" alt="Ford Focus ST" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ford Fiesta ST</td>
+                    <td>1.5</td>
+                    <td>200</td>
+                    <td>Бензин</td>
+                    <td>Компактний, але потужний, ідеальний для міста та треку</td>
+                    <td>
+                        <a href="./pictures/FordFiestaST.png" target="_blank">
+                            <img src="./pictures/FordFiestaST.png" alt="Ford Fiesta ST" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dacia Sandero Stepway</td>
+                    <td>1.0 - 1.6</td>
+                    <td>75 - 90</td>
+                    <td>Бензин</td>
+                    <td>Доступна ціна, підвищений кліренс, проста конструкція</td>
+                    <td>
+                        <a href="./pictures/DaciaSanderoStepway.png" target="_blank">
+                            <img src="./pictures/DaciaSanderoStepway.png" alt="Renault Sandero Stepway" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td rowspan="5" class="category-cell">Кросовери</td>
+                    <td>Toyota RAV4</td>
+                    <td>2.0 - 2.5</td>
+                    <td>150 - 220</td>
+                    <td>Бензин / Гібрид</td>
+                    <td>Надійність, економічність, доступність повного приводу</td>
+                    <td>
+                        <a href="./pictures/ToyotaRAV4.png" target="_blank">
+                            <img src="./pictures/ToyotaRAV4.png" alt="Toyota RAV4" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Honda CR-V</td>
+                    <td>1.5 - 2.0</td>
+                    <td>150 - 190</td>
+                    <td>Бензин / Гібрид</td>
+                    <td>Просторість, комфорт, передові технології</td>
+                    <td>
+                        <a href="./pictures/Honda CR-V.png" target="_blank">
+                            <img src="./pictures/Honda CR-V.png" alt="Honda CR-V" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mazda CX-5</td>
+                    <td>2.0 - 2.5</td>
+                    <td>150 - 194</td>
+                    <td>Бензин / Дизель</td>
+                    <td>Елегантний дизайн, хороша керованість, якісний інтер'єр</td>
+                    <td>
+                        <a href="./pictures/MazdaCX-5.png" target="_blank">
+                            <img src="./pictures/MazdaCX-5.png" alt="Mazda CX-5" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Subaru Forester</td>
+                    <td>2.0 - 2.5</td>
+                    <td>150 - 180</td>
+                    <td>Бензин / Гібрид</td>
+                    <td>Повний привід (AWD), надійність, підвищена прохідність</td>
+                    <td>
+                        <a href="./pictures/SubaruForester.png" target="_blank">
+                            <img src="./pictures/SubaruForester.png" alt="Subaru Forester" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hyundai Tucson</td>
+                    <td>1.6 - 2.5</td>
+                    <td>150 - 185</td>
+                    <td>Бензин / Дизель</td>
+                    <td>Стильний дизайн, великий вибір двигунів, доступність гібридної версії</td>
+                    <td>
+                        <a href="./pictures/HyundaiTucson.png" target="_blank">
+                            <img src="./pictures/HyundaiTucson.png" alt="Hyundai Tucson" class="car-table-image">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="footer">
+        <h2 id="автосалони">Автосалони в Україні</h2>
+        <p>Тут ви можете переглянути автосалони України:</p>
+        <iframe src="https://auto.ria.com/uk/newauto/autosalons/?r_source=g_ads&r_medium=search&r_campaign=performance_high_frequency&r_options=paid&r_audience=ppc_buyers_newauto&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mdFl1fJRKxf9Jah_Zur55ZEFV5zQUhMattqU2r_ghpKgbw3K6pHsaAlffEALw_wcB" ></iframe>
+    </div>
+</body>
+</html>
