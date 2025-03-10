@@ -2,12 +2,12 @@
     font-size: 40px;
 } 
 
-.inner-menu li {   /*ol */
+.inner-menu li {
     margin: 10px 0;
     marker: initial;
     font-size: 30px;
 }
-/* ol */
+
 .inner-menu a {
     color: rgb(29, 17, 6);
     text-decoration: none;
