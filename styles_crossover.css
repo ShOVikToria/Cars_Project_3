@@ -52,6 +52,7 @@ h2{
     text-align: center;
 }
 
-.upper-text{
-    text-align: left !important;
+p{
+    text-align: left;
+    margin: 0 7% 0 7%;
 }

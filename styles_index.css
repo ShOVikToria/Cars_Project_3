@@ -1,14 +1,13 @@
 .main-menu li:first-child{
     font-size: 40px;
-    color:rgb(192, 179, 179);
 } 
 
-.inner-menu li {
+.inner-menu li {   /*ol */
     margin: 10px 0;
     marker: initial;
     font-size: 30px;
 }
-
+/* ol */
 .inner-menu a {
     color: rgb(29, 17, 6);
     text-decoration: none;
@@ -24,15 +23,15 @@
     border: 2px solid rgb(219, 213, 213);
 }
 
-.car-table{
+#car-table{
     border-spacing: 10px;
 }
 
-.car-table a{
+#car-table a{
     color:rgb(129, 84, 43);
 }
 
-.car-table th, .content td {
+#car-table th, .content td {
     padding: 10px;
     font-size: 30px;
     text-align: center;
@@ -44,7 +43,6 @@
     color: rgb(192, 179, 179);
     font-weight: bold;
     text-align: center;
-    color: rgb(192, 179, 179);
 }
 
 iframe {
@@ -65,49 +63,38 @@ h2{
     margin-bottom: 10px;
 }
 
-.car-comparison-table {
+#car-comparison-table {
     width: 100%;
     margin: 20px 0;    
     border-collapse: collapse;
 }
 
-.car-comparison-table th,
-.car-comparison-table td {
+#car-comparison-table th,
+#car-comparison-table td {
     padding: 15px;
     border: 2px solid rgb(219, 213, 213);
-    text-align: left;
+    text-align: center;
 }
 
-.car-comparison-table th{
+#car-comparison-table th{
     font-size: 27px;
 }
 
-.car-comparison-table td {
+#car-comparison-table td {
     background-color: rgb(187, 162, 140);
     font-size: 24px;
 }
 
-.car-comparison-table .category-cell {
+#car-comparison-table .category-cell {
     background-color: rgb(66, 50, 36);
-    color: white;
     text-align: center;
     vertical-align: middle;
+    font-weight: bold;
 }
 
-
-
-.category-col {
+#category-col {
     background-color: rgb(66, 50, 36);
 }
-
-.model-col,
-.spec-col,
-.features-col,
-.image-col {
-    background-color: rgb(187, 162, 140);
-}
-
-
 
 .car-table-image {
     width: 350px;
@@ -119,4 +106,8 @@ h2{
 .car-table-image:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.content ul li{
+    margin-left: 30px;
 }

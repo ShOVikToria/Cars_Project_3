@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./styles_index.css">
     <style>
-        body{
-            margin: 0;
-            background-color: rgb(209, 188, 170);
-            font-family: 'Arial Narrow Bold', 'Lucida Sans Unicode', Verdana, sans-serif;
-        }   
+        a{
+            color: inherit; 
+        }  
     </style>
 </head>
 <body>
     <div class="header">
         <ul class="main-menu">
             <li>
-                <a href="index.html">&#8962; Головна</a>
+                <a href="index.html" id="light_text">&#8962; Головна</a>
             </li>
             <li>
                 <a href="sedan.html">Седани</a>
@@ -40,12 +38,21 @@
         <ol class="inner-menu">
             <li><a href="#вступ">Вступ</a></li>
             <li><a href="#типи-авто">Типи автомобілів</a></li>
+            <ul>
+                <li><a href="sedan.html#седан">Седан</a></li>
+                <li><a href="hatchback.html#хетчбек">Хетчбек</a></li>
+                <li><a href="crossover.html#кросовер">Кросовер</a></li>
+            </ul>
             <li><a href="#вигляд-опис">Зовнішній вигляд та коротний опис</a></li>
             <li><a href="#порівняння-моделей">Порівняння найпопулярніших моделей</a></li>
             <li><a href="#автосалони">Автосалони в Україні</a></li>
         </ol>
         <h2 id="вступ">Вступ</h2>
-        <p>Автомобілі — це не просто засіб пересування, а стиль життя, технології та інновації. На нашому сайті ви знайдете корисну інформацію про різні типи автомобілів, їх переваги та особливості. Ми розглядаємо три основні категорії: <b>Седани</b>, <b>Хетчбеки</b> та <b>Кросовери</b>. Кожен тип автомобіля має свої переваги, і ми допоможемо вам зробити правильний вибір.</p>
+        <p style="font-style: italic; font-family: serif; font-size: 36px;">Автомобілі — це не просто засіб пересування, 
+            а стиль життя, технології та інновації. На нашому сайті ви знайдете корисну інформацію про 
+            різні типи автомобілів, їх переваги та особливості. Ми розглядаємо три основні категорії: 
+            <b>Седани</b>, <b>Хетчбеки</b> та <b>Кросовери</b>. Кожен тип автомобіля має свої переваги,
+             і ми допоможемо вам зробити правильний вибір.</p>
 
         <h2 id="типи-авто">Типи автомобілів</h2>
         <p>Ось основні типи автомобілів, які ми розглядаємо:</p>
@@ -59,7 +66,7 @@
         </dl>
 
         <h2 id="вигляд-опис">Зовнішній вигляд та короткий опис</h2>
-        <table class="car-table">
+        <table id="car-table">
             <thead>
                 <tr>
                     <th>Седани</th>
@@ -88,16 +95,15 @@
 
         <h2 id="порівняння-моделей">Порівняння найпопулярніших моделей</h2>
         
-        <table class="car-comparison-table">
-            <!-- Групування стовпців -->
+        <table id="car-comparison-table">
             <colgroup>
-                <col class="category-col">
-                <col class="model-col">
+                <col id="category-col">
+                <col id="model-col">
                 <col class="spec-col">
                 <col class="spec-col">
                 <col class="spec-col">
-                <col class="features-col">
-                <col class="image-col">
+                <col id="features-col">
+                <col id="image-col">
             </colgroup>
             <thead>
                 <tr>
@@ -115,7 +121,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="5" class="category-cell">Седани</td>
+                    <td rowspan="5" class="category-cell" id="light_text">Седани</td>
                     <td>Hyundai Sonata</td>
                     <td>2.0 - 2.5</td>
                     <td>150 - 180</td>
@@ -177,7 +183,7 @@
                 </tr>
         
                 <tr>
-                    <td rowspan="5" class="category-cell">Хетчбеки</td>
+                    <td rowspan="5" class="category-cell" id="light_text">Хетчбеки</td>
                     <td>SEAT LEON</td>
                     <td>1.0 - 2.0</td>
                     <td>90 - 300</td>
@@ -239,7 +245,7 @@
                 </tr>
         
                 <tr>
-                    <td rowspan="5" class="category-cell">Кросовери</td>
+                    <td rowspan="5" class="category-cell" id="light_text">Кросовери</td>
                     <td>Toyota RAV4</td>
                     <td>2.0 - 2.5</td>
                     <td>150 - 220</td>
